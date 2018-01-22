@@ -1,15 +1,23 @@
+<!DOCTYPE html>
 <html>
 <head>
+<title>
+HW02 Task2
+</title>
+<meta charset="utf-8" />
 </head>
-</html>
 <body>
-<h3 id="Placeholder header"></h3>
+<h3 id="Placeholder"></h3>
 <button type = "button" onClick="popup()">Button1</button>
 <button type="button" onClick="incrementNumber()">Increment Number</button>
 <button type="button" onClick="addParagraph()">Add Paragraph</Button>
 <script>
 var i = 10;
-document.getElementById("Placeholder header").innerHTML = i;
+
+var placeholder = document.getElementById("Placeholder");
+
+placeholder.innerHTML = 10;
+
 
 function popup()	{
 	window.alert(i);
@@ -17,6 +25,7 @@ function popup()	{
 
 function incrementNumber()	{
 	i = i + 1;
+	placeholder.innerHTML = i;
 }
 
 function addParagraph()	{	
