@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+
+#title	{
+	text-align: center;
+	padding: 40px;
+}
+
+a {
+	text-decoration: underline;
+	cursor: pointer; 
+}
+
+
+.clearfix::after	{
+	content: "";
+	clear: both;
+	display: table;
+}
+.link	{
+	float: left; 
+	width: 33%;
+	text-align: center;
+}
+
+.text	{
+	float: left;
+	width: 66%;
+	text-align: left;
+}
+</style>
+</head>
+</html>
+<body>
+<div id="title">
+HW02 Task Three
+</div>
+<div class="clearfix">
+<div class="link">
+<p><a onclick='displayContent("Lorem Ipsem")'>Lorem Ipsem</a></p>
+<p><a onclick='displayContent("99 Bottles")'>99 Bottles</a></p>
+<p><a onclick='displayContent("Last Thing")'>Last Thing</a></p>
+</div>
+<div class="text">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ante non libero hendrerit suscipit. Cras tempor vehicula urna ut ornare. Sed at lobortis diam, vel ultrices ante. Nulla tincidunt magna ligula, id auctor tellus tempus commodo. Sed dignissim risus vitae malesuada tempus. Integer ante sapien, volutpat non molestie sed, porttitor nec lacus. Nunc blandit non justo eget porta.<p><p>Phasellus euismod tristique felis, sit amet commodo dolor auctor sed. Integer accumsan elit purus, nec dictum lectus aliquam eget. Praesent a justo ut odio maximus pulvinar. Suspendisse iaculis libero dui, quis condimentum felis pulvinar a. Nullam erat nulla, vestibulum a dolor nec, lacinia egestas felis. Suspendisse facilisis enim id sem volutpat pulvinar. Integer a purus maximus, dapibus orci sit amet, condimentum nisi. Proin ac gravida lectus. Sed varius, ligula id varius molestie, ante ipsum sodales metus, vitae ultricies dui orci in lectus. Nullam id nunc quis mauris rutrum gravida. Duis posuere, tortor eu congue placerat, nisi enim cursus nibh, id porttitor ligula sem a felis. Nullam lacinia facilisis nunc. Nullam eu ligula libero.</p><p>Integer dictum lobortis accumsan. Donec pharetra ipsum cursus velit egestas lobortis. Suspendisse justo quam, tincidunt vitae viverra vel, dictum id neque. Quisque efficitur risus a justo euismod maximus. In malesuada fermentum tellus eu cursus. Quisque mollis non enim nec sodales. Nullam elit mi, ultricies ac massa id, egestas tempor est. Pellentesque commodo fringilla nunc, at rhoncus lectus venenatis ac. Duis enim leo, tempus ac justo at, feugiat finibus ex. Vestibulum bibendum dignissim bibendum. Sed in lobortis nunc. Donec non malesuada leo. Nam vel urna interdum, varius risus eget, suscipit dui. Nam sollicitudin elit nec porttitor vulputate. Mauris sit amet eros arcu.</p><p>Nulla pharetra bibendum sem id bibendum. Etiam sit amet purus fermentum, elementum quam sed, vehicula neque. Vestibulum venenatis rhoncus odio sit amet placerat. Donec in turpis sem. Aenean erat lectus, convallis in erat quis, lacinia lacinia metus. Praesent eget orci sem. Maecenas suscipit, felis in finibus auctor, eros elit dictum elit, ac facilisis augue leo sit amet risus. Fusce tempus rhoncus diam a auctor. Nunc suscipit porttitor est nec tristique. Sed varius lacus id arcu varius, at blandit tortor porttitor. Nunc eu diam leo. Cras suscipit justo vel malesuada dignissim. Morbi blandit rutrum porta. Integer sit amet orci sit amet odio pulvinar bibendum. Donec vel enim pretium, pellentesque libero ut, eleifend est.</p>
+</div>
+</div>
+
+<script>
+
+function displayContent(text)	{
+var columnText = document.getElementsByClassName("text")[0];
+
+var loremText = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ante non libero hendrerit suscipit. Cras tempor vehicula urna ut ornare. Sed at lobortis diam, vel ultrices ante. Nulla tincidunt magna ligula, id auctor tellus tempus commodo. Sed dignissim risus vitae malesuada tempus. Integer ante sapien, volutpat non molestie sed, porttitor nec lacus. Nunc blandit non justo eget porta.<p><p>Phasellus euismod tristique felis, sit amet commodo dolor auctor sed. Integer accumsan elit purus, nec dictum lectus aliquam eget. Praesent a justo ut odio maximus pulvinar. Suspendisse iaculis libero dui, quis condimentum felis pulvinar a. Nullam erat nulla, vestibulum a dolor nec, lacinia egestas felis. Suspendisse facilisis enim id sem volutpat pulvinar. Integer a purus maximus, dapibus orci sit amet, condimentum nisi. Proin ac gravida lectus. Sed varius, ligula id varius molestie, ante ipsum sodales metus, vitae ultricies dui orci in lectus. Nullam id nunc quis mauris rutrum gravida. Duis posuere, tortor eu congue placerat, nisi enim cursus nibh, id porttitor ligula sem a felis. Nullam lacinia facilisis nunc. Nullam eu ligula libero.</p><p>Integer dictum lobortis accumsan. Donec pharetra ipsum cursus velit egestas lobortis. Suspendisse justo quam, tincidunt vitae viverra vel, dictum id neque. Quisque efficitur risus a justo euismod maximus. In malesuada fermentum tellus eu cursus. Quisque mollis non enim nec sodales. Nullam elit mi, ultricies ac massa id, egestas tempor est. Pellentesque commodo fringilla nunc, at rhoncus lectus venenatis ac. Duis enim leo, tempus ac justo at, feugiat finibus ex. Vestibulum bibendum dignissim bibendum. Sed in lobortis nunc. Donec non malesuada leo. Nam vel urna interdum, varius risus eget, suscipit dui. Nam sollicitudin elit nec porttitor vulputate. Mauris sit amet eros arcu.</p><p>Nulla pharetra bibendum sem id bibendum. Etiam sit amet purus fermentum, elementum quam sed, vehicula neque. Vestibulum venenatis rhoncus odio sit amet placerat. Donec in turpis sem. Aenean erat lectus, convallis in erat quis, lacinia lacinia metus. Praesent eget orci sem. Maecenas suscipit, felis in finibus auctor, eros elit dictum elit, ac facilisis augue leo sit amet risus. Fusce tempus rhoncus diam a auctor. Nunc suscipit porttitor est nec tristique. Sed varius lacus id arcu varius, at blandit tortor porttitor. Nunc eu diam leo. Cras suscipit justo vel malesuada dignissim. Morbi blandit rutrum porta. Integer sit amet orci sit amet odio pulvinar bibendum. Donec vel enim pretium, pellentesque libero ut, eleifend est.</p>";
+
+var nine9BottlesText = "<p>99 bottles of beer on the wall, 99 bottles of beer.Take one down and pass it around, 98 bottles of beer on the wall.</p><p>98 bottles of beer on the wall, 98 bottles of beer.Take one down and pass it around, 97 bottles of beer on the wall.</p><p>97 bottles of beer on the wall, 97 bottles of beer.Take one down and pass it around, 96 bottles of beer on the wall.</p><p>96 bottles of beer on the wall, 96 bottles of beer.Take one down and pass it around, 95 bottles of beer on the wall.</p>";
+
+var lastThingText = "<p>this is the third thing</p>";
+
+
+switch(text)	{
+	case "Lorem Ipsem":	columnText.innerHTML = loremText;
+				break;
+
+	case "99 Bottles": 	columnText.innerHTML =  nine9BottlesText;
+				break;
+
+	case "Last Thing":	columnText.innerHTML = lastThingText;
+}
+}
+</script>
+
+
+</body>
+</html>
+
+
